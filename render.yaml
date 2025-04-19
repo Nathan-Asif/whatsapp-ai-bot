@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: whatsapp-ai-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: VERIFY_TOKEN
+        value: DKwX36xSzJi0DQWYbQxP8yQDRudPv8iXdLhvvywCJ3LkF8QfkAwFr1LjLyKL8Sgf
+      - key: GEMINI_API_KEY
+        value: AIzaSyAVSeb3WJFoJSFp8rlreMVDND7ysiC6z9Y
